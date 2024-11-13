@@ -1,0 +1,1337 @@
+ERROR - 2024-11-12 23:12:35 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Models\SiteModel.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(19): App\Models\SiteModel->getAllSites()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#11 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Models\SiteModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(19): App\Models\SiteModel->getAllSites()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Models\SiteModel.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(19): App\Models\SiteModel->getAllSites()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-11-12 23:12:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: api/sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiteModel.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\SiteController.php(19): App\Models\SiteModel->getAllSites()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:17:48 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:17:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:17:55 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:17:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:17:56 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:17:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:20:12 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:20:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:20:14 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:20:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:20:37 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:20:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:20:38 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:20:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:20:52 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:20:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:20:54 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:20:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:21:13 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:21:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:21:14 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:21:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:21:15 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:21:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:22:16 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:22:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:22:42 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:22:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-12 23:25:25 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen bï¿½yle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 186)
+#1 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#10 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('UYGAR\\SQLEXPRES...', '', Object(SensitiveParameterValue), 'SiteManagementD...', 3306, '', 0)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#9 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok.  in C:\xampp\htdocs\test-case\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\test-case\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\test-case\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\test-case\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\test-case\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\test-case\app\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\test-case\system\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+#7 C:\xampp\htdocs\test-case\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+#8 C:\xampp\htdocs\test-case\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\test-case\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\test-case\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\test-case\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-12 23:25:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for UYGAR\SQLEXPRESS failed: Bilinen böyle bir ana bilgisayar yok. 
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Site`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SiteController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:26:32 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\SiteModel', [...])
+ 6 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model('App\\Models\\SiteModel')
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\SiteModel')
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:26:33 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\SiteModel', [...])
+ 6 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model('App\\Models\\SiteModel')
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\SiteModel')
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:26:49 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\SiteModel', [...])
+ 6 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model('App\\Models\\SiteModel')
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\SiteModel')
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:26:54 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\SiteModel', [...])
+ 6 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model('App\\Models\\SiteModel')
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\SiteModel')
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:27:01 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\Factories.php(235): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH\Config\Factories.php(169): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\SiteModel', [...])
+ 6 SYSTEMPATH\Common.php(802): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH\RESTful\BaseResource.php(70): model('App\\Models\\SiteModel')
+ 8 SYSTEMPATH\RESTful\BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\SiteModel')
+ 9 SYSTEMPATH\CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:30:45 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:31:02 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(12): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:31:14 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:31:30 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:31:31 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:31:40 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:34:28 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:35:08 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:35:20 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:35:21 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:36:45 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:46:30 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:55:34 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:57:02 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:57:03 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-12 23:57:59 --> Error: Class "CodeIgniter\Database\MSSQL\Connection" not found
+[Method: GET, Route: sites]
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(57): CodeIgniter\Database\Database->initDriver('MSSQL', 'Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 APPPATH\Controllers\SiteController.php(13): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->listAllSite()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
