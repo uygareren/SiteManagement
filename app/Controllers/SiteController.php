@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\BlockModel;
 use App\Models\SiteModel;
 use CodeIgniter\RESTful\ResourceController;
 
@@ -9,15 +10,24 @@ class SiteController extends ResourceController
     protected $modelName = 'App\Models\SiteModel';
     protected $format    = 'json';
 
-    /**
-     * Tüm siteleri JSON formatında döner.
-     *
-     * @return \CodeIgniter\HTTP\Response
-     */
-    public function getSites(){
-        $sites = $this->model->getSites();
+    public function getSites()
+    {
+        $siteModel = new SiteModel();
+        $blockModel = new BlockModel();
+        
+        $sites = $siteModel->getSites();
 
-        // Başarılı yanıt ile siteleri döndür
+        foreach ($sites as &$site) {
+            $blocks = $blockModel->getBlockBySiteId($site['id']);
+            $blockCount = count($blocks);
+            
+            if ($blockCount == 1) {
+                $site['type'] = 'Apartment'; 
+            } elseif ($blockCount > 1) {
+                $site['type'] = 'Site';
+            }
+        }
+
         return $this->respond([
             'status' => 200,
             'message' => 'Sites retrieved successfully',
@@ -25,50 +35,47 @@ class SiteController extends ResourceController
         ]);
     }
 
-
-    /**
-     * Belirli bir siteyi id ile alır.
-     *
-     * @param int $id
-     * @return \CodeIgniter\HTTP\Response
-     */
-
     public function getSiteById($id){
-        $site = $this->model->getSiteById($id);
-
+        $siteModel = new SiteModel();
+        $blockModel = new BlockModel();
+    
+        $site = $siteModel->getSiteById($id);
+    
         if ($site) {
-            // Başarılı yanıt
+            $blocks = $blockModel->getBlockBySiteId($id);
+            $blockCount = count($blocks);
+            
+            if ($blockCount == 1) {
+                $site['type'] = 'Apartment'; 
+            } elseif ($blockCount > 1) {
+                $site['type'] = 'Site';
+            } else {
+                $site['type'] = 'Site'; 
+            }
+    
             return $this->respond([
                 'status' => 200,
                 'message' => 'Site retrieved successfully',
                 'data' => $site
             ]);
         } else {
-            // Site bulunamadığında hata mesajı
             return $this->respond([
                 'status' => 404,
                 'message' => 'Site not found'
             ]);
         }
     }
+    
 
-      /**
-     * Yeni bir site kaydeder.
-     *
-     * @return \CodeIgniter\HTTP\Response
-     */
     public function postSite(){
     $model = new SiteModel();
 
-    // JSON formatındaki veriyi alıyoruz
-    $data = $this->request->getJSON(true); // JSON verisini alıyoruz
+    $data = $this->request->getJSON(true);
 
-    // Gelen veriyi kontrol ediyoruz
     if (empty($data['site_name']) || empty($data['type'])) {
         return $this->failValidationError('Site name and type are required.');
     }
 
-    // Verinin doğruluğunu kontrol et ve siteyi kaydet
     if ($model->saveSite($data)) {
         return $this->respondCreated([
             'status' => 201,
@@ -80,29 +87,23 @@ class SiteController extends ResourceController
     }
     }
 
-    public function updateSite($id)
-    {
+    public function updateSite($id){
         $model = new SiteModel();
     
-        // Gelen JSON verisini alıyoruz
-        $data = $this->request->getJSON(true); // JSON verisini alıyoruz
+        $data = $this->request->getJSON(true); 
     
-        // Verilerin doğruluğunu kontrol et
         if (empty($data['site_name']) || empty($data['type'])) {
             return $this->failValidationError('Site name and type are required.');
         }
     
-        // Mevcut siteyi kontrol et
-        $site = $model->getSiteById($id); // id'ye ait siteyi al
+        $site = $model->getSiteById($id);
     
         if (!$site) {
             return $this->failNotFound('Site with the specified ID not found.');
         }
     
-        // Güncellenme zamanını ekliyoruz
         $data['updated_at'] = date('Y-m-d H:i:s'); // Güncelleme zamanı
     
-        // Mevcut siteyi güncelle
         if ($model->updateSite($id, $data)) {
             return $this->respond([
                 'status' => 200,
@@ -113,12 +114,36 @@ class SiteController extends ResourceController
             return $this->failServerError('Failed to update site.');
         }
     }
-    
 
+    public function deleteSite($id){
+        $model = new SiteModel();
+        
+        $flat = $model->getSiteById($id);
 
+        if (!$flat) {
+            return $this->response->setStatusCode(404)
+                ->setJSON([
+                    'status'  => 404,
+                    'message' => 'Site not found.'
+                ]);
+        }
 
+        $deleted = $model->deleteSite($id);
 
-
+        if ($deleted) {
+            return $this->response->setStatusCode(200)
+                ->setJSON([
+                    'status'  => 200,
+                    'message' => 'Site deleted successfully.'
+                ]);
+        } else {
+            return $this->response->setStatusCode(500)
+                ->setJSON([
+                    'status'  => 500,
+                    'message' => 'Failed to delete Site.'
+                ]);
+        }
+    }
 
 }
 
