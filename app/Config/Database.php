@@ -25,25 +25,25 @@ class Database extends Config
      * @var array<string, mixed>
      */
     public $default = [
-        'DSN'      => '',                       // This field can be left empty
-        'hostname' => 'UYGAR\\SQLEXPRESS',       // SQL Server instance name, escape the backslash
-        'username' => 'sa',                      // SQL Server Authentication username
-        'password' => 'uygar123',                // SQL Server Authentication password
-        'database' => 'SiteManagementDB',        // Database name
-        'DBDriver' => 'sqlsrv',                  // Using SQLSRV driver for MSSQL
-        'DBPrefix' => '',                        // Table prefix (can be left empty)
-        'pConnect' => false,                     // Disabling persistent connection
-        'DBDebug'  => true,                      // Enable debugging in development
-        'cacheOn'  => false,                     // Disable database caching
-        'cacheDir' => '',                        // Cache directory (not necessary)
-        'charset'  => 'utf8',                    // UTF-8 character set
-        'DBCollat' => 'utf8_general_ci',         // UTF-8 collation
-        'swapPre'  => '',                        // Optional table prefix
-        'encrypt'  => false,                     // Disable encryption
-        'compress' => false,                     // Disable compression
-        'strictOn' => false,                     // Disable strict mode
-        'failover' => [],                        // Optional failover connection
-        'port'     => 1433                       // Default MSSQL port
+        'DSN'      => '',                       
+        'hostname' => 'UYGAR\\SQLEXPRESS',       
+        'username' => 'sa',                      
+        'password' => 'uygar123',               
+        'database' => 'SiteManagementDB',        
+        'DBDriver' => 'sqlsrv',                  
+        'DBPrefix' => '',                        
+        'pConnect' => false,                     
+        'DBDebug'  => true,                      
+        'cacheOn'  => false,                     
+        'cacheDir' => '',                        
+        'charset'  => 'utf8',                    
+        'DBCollat' => 'utf8_general_ci',         
+        'swapPre'  => '',                        
+        'encrypt'  => false,                     
+        'compress' => false,                     
+        'strictOn' => false,                     
+        'failover' => [],                        
+        'port'     => 1433                       
     ];
     
     
