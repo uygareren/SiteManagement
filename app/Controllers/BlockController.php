@@ -10,16 +10,10 @@ class BlockController extends ResourceController
     protected $modelName = 'App\Models\BlockModel';
     protected $format    = 'json';
 
-    /**
-     * Tüm blokları JSON formatında döner.
-     *
-     * @return \CodeIgniter\HTTP\Response
-     */
     public function getBlocks()
     {
         $blocks = $this->model->getBlocks();
 
-        // Başarılı yanıt ile blokları döndür
         return $this->respond([
             'status' => 200,
             'message' => 'Blocks retrieved successfully',
@@ -27,25 +21,17 @@ class BlockController extends ResourceController
         ]);
     }
 
-    /**
-     * Belirli bir blok ID'sine göre blok verisini alır.
-     *
-     * @param int $id
-     * @return \CodeIgniter\HTTP\Response
-     */
     public function getBlockById($id)
     {
         $block = $this->model->getBlockById($id);
 
         if ($block) {
-            // Başarılı yanıt
             return $this->respond([
                 'status' => 200,
                 'message' => 'Block retrieved successfully',
                 'data' => $block
             ]);
         } else {
-            // Blok bulunamadığında hata mesajı
             return $this->respond([
                 'status' => 404,
                 'message' => 'Block not found'
@@ -53,12 +39,6 @@ class BlockController extends ResourceController
         }
     }
 
-    /**
-     * Belirli bir site ID'sine göre blokları alır.
-     *
-     * @param int $siteId
-     * @return \CodeIgniter\HTTP\Response
-     */
     public function getBlocksBySiteId($siteId)
     {
         $blocks = $this->model->getBlockBySiteId($siteId);
@@ -77,22 +57,14 @@ class BlockController extends ResourceController
         }
     }
 
-    /**
-     * Yeni bir blok kaydeder.
-     *
-     * @return \CodeIgniter\HTTP\Response
-     */
     public function postBlock()
     {
-        // Gelen JSON verisini alıyoruz
-        $data = $this->request->getJSON(true); // JSON verisini alıyoruz
+        $data = $this->request->getJSON(true); 
 
-        // Gelen veriyi kontrol ediyoruz
         if (empty($data['site_id']) || empty($data['block_name'])) {
             return $this->failValidationError('Site ID and Block Name are required.');
         }
 
-        // Verinin doğruluğunu kontrol et ve blok kaydet
         if ($this->model->saveBlock($data)) {
             return $this->respondCreated([
                 'status' => 201,
@@ -104,33 +76,21 @@ class BlockController extends ResourceController
         }
     }
 
-    /**
-     * Varolan bir bloğu günceller.
-     *
-     * @param int $id
-     * @return \CodeIgniter\HTTP\Response
-     */
-    public function updateBlock($id)
-    {
-        // Gelen JSON verisini alıyoruz
-        $data = $this->request->getJSON(true); // JSON verisini alıyoruz
+    public function updateBlock($id){
+        $data = $this->request->getJSON(true); 
 
-        // Verilerin doğruluğunu kontrol et
         if (empty($data['site_id']) || empty($data['block_name'])) {
             return $this->failValidationError('Site ID and Block Name are required.');
         }
 
-        // Mevcut bloğu kontrol et
-        $block = $this->model->getBlockById($id); // id'ye ait bloğu al
+        $block = $this->model->getBlockById($id); 
 
         if (!$block) {
             return $this->failNotFound('Block with the specified ID not found.');
         }
 
-        // Güncellenme zamanını ekliyoruz
-        $data['updated_at'] = date('Y-m-d H:i:s'); // Güncelleme zamanı
+        $data['updated_at'] = date('Y-m-d H:i:s');
 
-        // Mevcut bloğu güncelle
         if ($this->model->updateBlock($id, $data)) {
             return $this->respond([
                 'status' => 200,
@@ -140,5 +100,36 @@ class BlockController extends ResourceController
         } else {
             return $this->failServerError('Failed to update block.');
         }
+    }
+
+    public function deleteBlock($id){
+        $model = new BlockModel();
+
+        $block = $model->getBlockById($id);
+
+        if(!$block){
+            return $this->response->setStatusCode(404)
+            ->setJSON([
+                'status'  => 404,
+                'message' => 'Block not found.'
+            ]);
+        }
+
+        $deleted = $model->deleteBlock($id);
+
+        if ($deleted) {
+            return $this->response->setStatusCode(200)
+                ->setJSON([
+                    'status'  => 200,
+                    'message' => 'Block deleted successfully.'
+                ]);
+        } else {
+            return $this->response->setStatusCode(500)
+                ->setJSON([
+                    'status'  => 500,
+                    'message' => 'Failed to delete Block.'
+                ]);
+        }
+
     }
 }

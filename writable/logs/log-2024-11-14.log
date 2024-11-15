@@ -1,0 +1,265 @@
+WARNING - 2024-11-14 19:06:30 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Controllers\AdminController.php on line 28.
+ 1 APPPATH\Controllers\AdminController.php(28): strtotime(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddDebt()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2024-11-14 19:08:04 --> admin_id: 
+DEBUG - 2024-11-14 19:08:04 --> user_id: 
+DEBUG - 2024-11-14 19:08:04 --> amount: 
+DEBUG - 2024-11-14 19:08:04 --> deadline: 
+DEBUG - 2024-11-14 19:08:47 --> admin_id: 
+DEBUG - 2024-11-14 19:08:47 --> user_id: 
+DEBUG - 2024-11-14 19:08:47 --> amount: 
+DEBUG - 2024-11-14 19:08:47 --> deadline: 
+DEBUG - 2024-11-14 19:09:08 --> admin_id: 
+DEBUG - 2024-11-14 19:09:08 --> user_id: 
+DEBUG - 2024-11-14 19:09:08 --> amount: 
+DEBUG - 2024-11-14 19:09:08 --> deadline: 
+DEBUG - 2024-11-14 19:11:41 --> admin_id: 1
+DEBUG - 2024-11-14 19:11:41 --> user_id: 5
+DEBUG - 2024-11-14 19:11:41 --> amount: 1000
+DEBUG - 2024-11-14 19:11:41 --> deadline: 2024-12-31 15:30:00
+DEBUG - 2024-11-14 19:34:14 --> admin_id: 
+DEBUG - 2024-11-14 19:34:14 --> user_id: 
+DEBUG - 2024-11-14 19:34:14 --> block_id: 
+DEBUG - 2024-11-14 19:34:14 --> apartment_no: 
+DEBUG - 2024-11-14 19:34:14 --> room_number: 
+DEBUG - 2024-11-14 19:34:30 --> admin_id: 
+DEBUG - 2024-11-14 19:34:30 --> user_id: 
+DEBUG - 2024-11-14 19:34:30 --> block_id: 
+DEBUG - 2024-11-14 19:34:30 --> apartment_no: 
+DEBUG - 2024-11-14 19:34:30 --> room_number: 
+DEBUG - 2024-11-14 19:34:57 --> admin_id: 
+DEBUG - 2024-11-14 19:34:57 --> user_id: 
+DEBUG - 2024-11-14 19:34:57 --> block_id: 
+DEBUG - 2024-11-14 19:34:57 --> apartment_no: 
+DEBUG - 2024-11-14 19:34:57 --> room_number: 
+DEBUG - 2024-11-14 19:36:39 --> admin_id: 
+DEBUG - 2024-11-14 19:36:39 --> user_id: 
+DEBUG - 2024-11-14 19:36:39 --> block_id: 
+DEBUG - 2024-11-14 19:36:39 --> apartment_no: 
+DEBUG - 2024-11-14 19:36:39 --> room_number: 
+DEBUG - 2024-11-14 19:37:05 --> admin_id: 
+DEBUG - 2024-11-14 19:37:05 --> user_id: 
+DEBUG - 2024-11-14 19:37:05 --> block_id: 
+DEBUG - 2024-11-14 19:37:05 --> apartment_no: 
+DEBUG - 2024-11-14 19:37:05 --> room_number: 
+DEBUG - 2024-11-14 19:37:09 --> admin_id: 
+DEBUG - 2024-11-14 19:37:09 --> user_id: 
+DEBUG - 2024-11-14 19:37:09 --> block_id: 
+DEBUG - 2024-11-14 19:37:09 --> apartment_no: 
+DEBUG - 2024-11-14 19:37:09 --> room_number: 
+DEBUG - 2024-11-14 19:38:38 --> admin_id: 
+DEBUG - 2024-11-14 19:38:38 --> user_id: 
+DEBUG - 2024-11-14 19:38:38 --> block_id: 
+DEBUG - 2024-11-14 19:38:38 --> apartment_no: 
+DEBUG - 2024-11-14 19:38:38 --> room_number: 
+CRITICAL - 2024-11-14 19:40:00 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+[Method: POST, Route: admin/add-apartment]
+in APPPATH\Controllers\AdminController.php on line 70.
+ 1 APPPATH\Controllers\AdminController.php(70): json_decode([...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddApartmentForUser()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2024-11-14 19:41:08 --> admin_id: 
+DEBUG - 2024-11-14 19:41:08 --> user_id: 
+DEBUG - 2024-11-14 19:41:08 --> block_id: 
+DEBUG - 2024-11-14 19:41:08 --> apartment_no: 
+DEBUG - 2024-11-14 19:41:08 --> room_number: 
+DEBUG - 2024-11-14 19:42:56 --> admin_id: 
+DEBUG - 2024-11-14 19:42:56 --> user_id: 
+DEBUG - 2024-11-14 19:42:56 --> block_id: 
+DEBUG - 2024-11-14 19:42:56 --> apartment_no: 
+DEBUG - 2024-11-14 19:42:56 --> room_number: 
+ERROR - 2024-11-14 19:42:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'user_id', table 'SiteManagementDB.dbo.Apartment'; column does not allow nulls. INSERT fails.
+CRITICAL - 2024-11-14 19:42:57 --> CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'user_id', table 'SiteManagementDB.dbo.Apartment'; column does not allow nulls. INSERT fails.
+[Method: POST, Route: admin/add-apartment]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2332): CodeIgniter\Database\BaseConnection->query('INSERT INTO "SiteManagementDB"."dbo"."Apartment" ("user_id","block_id","apartment_no","room_number","created_at") VALUES (:user_id:, :block_id:, :apartment_no:, :room_number:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(122): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddApartmentForUser()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-14 19:42:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'user_id', table 'SiteManagementDB.dbo.Apartment'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 488.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\SQLSRV\Connection->execute('INSERT INTO "SiteManagementDB"."dbo"."Apartment" ("user_id","block_id","apartment_no","room_number","created_at") VALUES (NULL, NULL, NULL, NULL, \'2024-11-14 19:42:56\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "SiteManagementDB"."dbo"."Apartment" ("user_id","block_id","apartment_no","room_number","created_at") VALUES (NULL, NULL, NULL, NULL, \'2024-11-14 19:42:56\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2332): CodeIgniter\Database\BaseConnection->query('INSERT INTO "SiteManagementDB"."dbo"."Apartment" ("user_id","block_id","apartment_no","room_number","created_at") VALUES (:user_id:, :block_id:, :apartment_no:, :room_number:, :created_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AdminController.php(122): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddApartmentForUser()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2024-11-14 19:43:46 --> admin_id: 
+DEBUG - 2024-11-14 19:43:46 --> user_id: 
+DEBUG - 2024-11-14 19:43:46 --> block_id: 
+DEBUG - 2024-11-14 19:43:46 --> apartment_no: 
+DEBUG - 2024-11-14 19:43:46 --> room_number: 
+ERROR - 2024-11-14 19:43:46 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'user_id', table 'SiteManagementDB.dbo.Apartment'; column does not allow nulls. INSERT fails.
+CRITICAL - 2024-11-14 19:43:46 --> CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'user_id', table 'SiteManagementDB.dbo.Apartment'; column does not allow nulls. INSERT fails.
+[Method: POST, Route: admin/add-apartment]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2332): CodeIgniter\Database\BaseConnection->query('INSERT INTO "SiteManagementDB"."dbo"."Apartment" ("user_id","block_id","apartment_no","room_number","created_at") VALUES (:user_id:, :block_id:, :apartment_no:, :room_number:, :created_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminController.php(122): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddApartmentForUser()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-14 19:43:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'user_id', table 'SiteManagementDB.dbo.Apartment'; column does not allow nulls. INSERT fails.
+in SYSTEMPATH\Database\SQLSRV\Connection.php on line 488.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\SQLSRV\Connection->execute('INSERT INTO "SiteManagementDB"."dbo"."Apartment" ("user_id","block_id","apartment_no","room_number","created_at") VALUES (NULL, NULL, NULL, NULL, \'2024-11-14 19:43:46\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "SiteManagementDB"."dbo"."Apartment" ("user_id","block_id","apartment_no","room_number","created_at") VALUES (NULL, NULL, NULL, NULL, \'2024-11-14 19:43:46\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2332): CodeIgniter\Database\BaseConnection->query('INSERT INTO "SiteManagementDB"."dbo"."Apartment" ("user_id","block_id","apartment_no","room_number","created_at") VALUES (:user_id:, :block_id:, :apartment_no:, :room_number:, :created_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AdminController.php(122): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddApartmentForUser()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2024-11-14 19:47:38 --> admin_id: 
+DEBUG - 2024-11-14 19:47:38 --> user_id: 
+DEBUG - 2024-11-14 19:47:38 --> block_id: 
+DEBUG - 2024-11-14 19:47:38 --> apartment_no: 
+DEBUG - 2024-11-14 19:47:38 --> room_number: 
+DEBUG - 2024-11-14 19:48:11 --> admin_id: 
+DEBUG - 2024-11-14 19:48:11 --> user_id: 
+DEBUG - 2024-11-14 19:48:11 --> block_id: 
+DEBUG - 2024-11-14 19:48:11 --> apartment_no: 
+DEBUG - 2024-11-14 19:48:11 --> room_number: 
+DEBUG - 2024-11-14 19:48:51 --> admin_id: 
+DEBUG - 2024-11-14 19:48:51 --> user_id: 
+DEBUG - 2024-11-14 19:48:51 --> block_id: 
+DEBUG - 2024-11-14 19:48:51 --> apartment_no: 
+DEBUG - 2024-11-14 19:48:51 --> room_number: 
+DEBUG - 2024-11-14 19:51:07 --> admin_id: 
+DEBUG - 2024-11-14 19:51:07 --> user_id: 
+DEBUG - 2024-11-14 19:51:07 --> block_id: 
+DEBUG - 2024-11-14 19:51:07 --> apartment_no: 
+DEBUG - 2024-11-14 19:51:07 --> room_number: 
+DEBUG - 2024-11-14 19:51:14 --> admin_id: 
+DEBUG - 2024-11-14 19:51:14 --> user_id: 
+DEBUG - 2024-11-14 19:51:14 --> block_id: 
+DEBUG - 2024-11-14 19:51:14 --> apartment_no: 
+DEBUG - 2024-11-14 19:51:14 --> room_number: 
+DEBUG - 2024-11-14 19:51:48 --> admin_id: 
+DEBUG - 2024-11-14 19:51:48 --> user_id: 
+DEBUG - 2024-11-14 19:51:48 --> block_id: 
+DEBUG - 2024-11-14 19:51:48 --> apartment_no: 
+DEBUG - 2024-11-14 19:51:48 --> room_number: 
+DEBUG - 2024-11-14 19:52:34 --> admin_id: 
+DEBUG - 2024-11-14 19:52:34 --> user_id: 
+DEBUG - 2024-11-14 19:52:34 --> block_id: 
+DEBUG - 2024-11-14 19:52:34 --> apartment_no: 
+DEBUG - 2024-11-14 19:52:34 --> room_number: 
+DEBUG - 2024-11-14 19:52:56 --> admin_id: 
+DEBUG - 2024-11-14 19:52:56 --> user_id: 
+DEBUG - 2024-11-14 19:52:56 --> block_id: 
+DEBUG - 2024-11-14 19:52:56 --> apartment_no: 
+DEBUG - 2024-11-14 19:52:56 --> room_number: 
+DEBUG - 2024-11-14 19:53:39 --> admin_id: 
+DEBUG - 2024-11-14 19:53:39 --> user_id: 
+DEBUG - 2024-11-14 19:53:39 --> block_id: 
+DEBUG - 2024-11-14 19:53:39 --> apartment_no: 
+DEBUG - 2024-11-14 19:53:39 --> room_number: 
+DEBUG - 2024-11-14 19:53:46 --> admin_id: 
+DEBUG - 2024-11-14 19:53:46 --> user_id: 
+DEBUG - 2024-11-14 19:53:46 --> block_id: 
+DEBUG - 2024-11-14 19:53:46 --> apartment_no: 
+DEBUG - 2024-11-14 19:53:46 --> room_number: 
+CRITICAL - 2024-11-14 19:54:46 --> ErrorException: Array to string conversion
+[Method: POST, Route: admin/add-apartment]
+in APPPATH\Controllers\AdminController.php on line 77.
+ 1 APPPATH\Controllers\AdminController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\test-case\\app\\Controllers\\AdminController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddApartmentForUser()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-14 19:55:34 --> ErrorException: Array to string conversion
+[Method: POST, Route: admin/apartment]
+in APPPATH\Controllers\AdminController.php on line 77.
+ 1 APPPATH\Controllers\AdminController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\test-case\\app\\Controllers\\AdminController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddApartmentForUser()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-14 19:56:13 --> ErrorException: Undefined array key "admin_id"
+[Method: POST, Route: admin/add-apartment]
+in APPPATH\Controllers\AdminController.php on line 77.
+ 1 APPPATH\Controllers\AdminController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "admin_id"', 'C:\\xampp\\htdocs\\test-case\\app\\Controllers\\AdminController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->PostAddApartmentForUser()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-14 21:22:13 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+[Method: POST, Route: flat]
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 537.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(537): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 APPPATH\Controllers\FlatController.php(92): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FlatController->postFlat()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-14 21:22:20 --> BadMethodCallException: Call to undefined method App\Models\FlatModel::saveFlat
+[Method: POST, Route: flat]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\FlatController.php(100): CodeIgniter\Model->__call('saveFlat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FlatController->postFlat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-14 21:23:06 --> BadMethodCallException: Call to undefined method App\Models\FlatModel::saveFlat
+[Method: POST, Route: flat]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\FlatController.php(100): CodeIgniter\Model->__call('saveFlat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FlatController->postFlat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-14 21:23:10 --> BadMethodCallException: Call to undefined method App\Models\FlatModel::saveFlat
+[Method: POST, Route: flat]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\FlatController.php(100): CodeIgniter\Model->__call('saveFlat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FlatController->postFlat()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

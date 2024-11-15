@@ -1,0 +1,60 @@
+CRITICAL - 2024-11-15 09:21:41 --> BadMethodCallException: Call to undefined method App\Models\BlockModel::getBlocksByCountAndDate
+[Method: GET, Route: site/filter]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\SiteController.php(130): CodeIgniter\Model->__call('getBlocksByCountAndDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->filterBlocksByCountAndDate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 09:22:14 --> BadMethodCallException: Call to undefined method App\Models\BlockModel::getBlocksByCountAndDate
+[Method: GET, Route: site/filter]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\SiteController.php(130): CodeIgniter\Model->__call('getBlocksByCountAndDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->filterBlocksByCountAndDate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 09:22:15 --> BadMethodCallException: Call to undefined method App\Models\BlockModel::getBlocksByCountAndDate
+[Method: GET, Route: site/filter]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\SiteController.php(130): CodeIgniter\Model->__call('getBlocksByCountAndDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->filterBlocksByCountAndDate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 09:22:19 --> BadMethodCallException: Call to undefined method App\Models\BlockModel::getBlocksByCountAndDate
+[Method: GET, Route: site/filter]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\SiteController.php(130): CodeIgniter\Model->__call('getBlocksByCountAndDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->filterBlocksByCountAndDate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 09:22:57 --> BadMethodCallException: Call to undefined method App\Models\BlockModel::getBlocksByCountAndDate
+[Method: GET, Route: site/filter]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\SiteController.php(129): CodeIgniter\Model->__call('getBlocksByCountAndDate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SiteController->getFilterBlocksByCountAndDate()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-15 13:38:59 --> BadMethodCallException: Call to undefined method App\Models\BlockModel::deleteFlat
+[Method: DELETE, Route: block/8]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\BlockController.php(119): CodeIgniter\Model->__call('deleteFlat', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BlockController->deleteBlock('8')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlockController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
