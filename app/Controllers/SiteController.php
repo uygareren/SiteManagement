@@ -72,7 +72,7 @@ class SiteController extends ResourceController
 
     $data = $this->request->getJSON(true);
 
-    if (empty($data['site_name']) || empty($data['type'])) {
+    if (empty($data['site_name'])) {
         return $this->failValidationError('Site name and type are required.');
     }
 
@@ -92,7 +92,7 @@ class SiteController extends ResourceController
     
         $data = $this->request->getJSON(true); 
     
-        if (empty($data['site_name']) || empty($data['type'])) {
+        if (empty($data['site_name'])) {
             return $this->failValidationError('Site name and type are required.');
         }
     

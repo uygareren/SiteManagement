@@ -67,7 +67,6 @@ class AdminController extends ResourceController
         $userModel = new UserModel();
         $flatModel = new FlatModel();
 
-        // 1. Admin kontrolü
         $admin = $adminModel->find($adminId);
         if (!$admin) {
             return $this->response->setJSON([
@@ -76,7 +75,6 @@ class AdminController extends ResourceController
             ]);
         }
 
-        // 2. Flat kontrolü
         $flat = $flatModel->find($flatId);
         if (!$flat) {
             return $this->response->setJSON([
@@ -85,7 +83,6 @@ class AdminController extends ResourceController
             ]);
         }
 
-        // 3. Flat başka kullanıcıya atanmış mı kontrolü
         $existingUser = $userModel->where('flat_id', $flatId)->first();
         if ($existingUser) {
             return $this->response->setJSON([
@@ -94,7 +91,6 @@ class AdminController extends ResourceController
             ]);
         }
 
-        // 4. Kullanıcı kontrolü
         $user = $userModel->find($userId);
         if (!$user) {
             return $this->response->setJSON([
@@ -103,7 +99,6 @@ class AdminController extends ResourceController
             ]);
         }
 
-        // 5. Flat atamasını gerçekleştirme
         $userModel->update($userId, ['flat_id' => $flatId]);
 
         return $this->response->setJSON([

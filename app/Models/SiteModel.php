@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 class SiteModel extends Model{
     protected $table = 'site';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['site_name', 'type', 'created_at'];
+    protected $allowedFields = ['site_name', 'created_at', 'updated_at'];
 
     public function getSites(){
         return $this->findAll();
